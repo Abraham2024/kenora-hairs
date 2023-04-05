@@ -1,0 +1,127 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+}
+
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 10px;
+	height: 100%
+	width: 100%;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+nav ul li a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.banner {
+	background-image:url("https://images5.alphacoders.com/433/433531.jpg");
+	background-size: cover;
+	background-position: center;
+	color: black;
+	padding: 100px 0;
+	text-align: center;
+}
+
+.products {
+	margin-top: 50px;
+}
+
+.product-item {
+	display: inline-block;
+	margin-right: 20px;
+	vertical-align: top;
+}
+
+.product-item img {
+	width: 200px;
+	height: 200px;
+	object-fit: cover;
+}
+
+.product-item h3 {
+	margin: 10px 0;
+}
+
+.product-item p {
+	font-size: 14px;
+	line-height: 1.5;
+}
+
+button {
+	background-color: #333;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #555;
+}
+#popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 600px;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  opacity: 0.9;
+}
+
+#show-popup {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #ff9f43;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#close {
+  display: block;
+  margin-top: 20px;
+  text-align: right;
+  cursor: pointer;
+}
+
+.slider {
+	width: 100%;
+	height: 400px;
+	position: relative;
+	overflow: hidden;
+}
+
+.slide {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+	opacity: 1;
+}
+
