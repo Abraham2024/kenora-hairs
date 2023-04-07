@@ -17,18 +17,26 @@ showPopupButton.addEventListener("click", function() {
   }
 });
 
-// ...
-
-
-// Add to Cart button functionality
+// Declare and initialize the cart count and total price variables
 let cartCount = 0;
+let totalPrice = 0;
 
+// Select all the buttons and add a click event listener to each one
 document.querySelectorAll('.product-item button').forEach(button => {
 	button.addEventListener('click', () => {
+		// Get the price of the clicked product and add it to the total price
+		const price = parseFloat(button.getAttribute('data-price'));
+		totalPrice += price;
+		
+		// Increment the cart count and display an alert message with the updated cart count and total price
 		cartCount++;
-		alert(`Item added to cart. Cart count: ${cartCount}`);
+		alert(`Item added to cart. Cart count: ${cartCount}. Total price: #${totalPrice.toFixed(2)
+		}`);
 	});
 });
+
+
+
 const slides = document.querySelectorAll('.slide');
 let currentSlide = 0;
 

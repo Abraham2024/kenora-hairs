@@ -58,6 +58,9 @@ a:hover {
 .icons{
 	float:right;
 }
+.call {
+	float: right;
+}
 .products {
 	margin-top: 50px;
 	overflow: auto;
@@ -86,7 +89,10 @@ a:hover {
 	font-size: 14px;
 	line-height: 1.5;
 }
-
+.butt {
+	background-color: white;
+color: blue;	
+}
 button {
 	background-color: #333;
 	color: #fff;
@@ -121,12 +127,17 @@ button:hover {
   border-radius: 5px;
   cursor: pointer;
 }
-
+footer {
+	color: black;
+}
+	
 #close {
   display: block;
   margin-top: 20px;
-  text-align: right;
+  text-align: center;
   cursor: pointer;
+  padding: 10px 20px;
+  
 }
 
 .slider {
