@@ -2,8 +2,9 @@ body {
 	margin: auto;
 	padding: 10px;
 	font-family: Arial, sans-serif;
-	width: 100%;
+	width: 95%;
 	height: 100%;
+	display: auto;
 }
 
 header {
@@ -54,20 +55,26 @@ a:hover {
 	padding: 100px 0;
 	text-align: center;
 }
-
+.icons{
+	float:right;
+}
 .products {
 	margin-top: 50px;
+	overflow: auto;
+	margin: auto;
+	width: 100;
 }
 
 .product-item {
 	display: inline-block;
 	margin-right: 20px;
 	vertical-align: top;
+	overflow: auto;
 }
 
 .product-item img {
-	width: 160px;
-	height: 160px;
+	width: 200px;
+	height: 300px;
 	object-fit: cover;
 }
 
